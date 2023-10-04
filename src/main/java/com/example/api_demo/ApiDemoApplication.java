@@ -6,10 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ApiDemoApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         SpringApplication.run(ApiDemoApplication.class, args);
-        System.out.println("실행 완료");
+
+        while (true){
+            System.out.println("실행 완료");
+
+            Thread.sleep(100000);
+        }
 
     }
 
